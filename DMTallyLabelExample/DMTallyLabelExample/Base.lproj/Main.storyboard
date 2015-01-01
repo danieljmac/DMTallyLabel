@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpd-oK-Vax">
+                                <rect key="frame" x="87" y="414" width="200" height="47"/>
+                                <color key="backgroundColor" red="0.43650081629999998" green="0.76556262350000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="C52-nz-oo5"/>
+                                    <constraint firstAttribute="width" constant="200" id="keu-72-8ri"/>
+                                </constraints>
+                                <state key="normal" title="Tally to 1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tallyTo1:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aT2-nD-M3C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8C4-Mq-w8H">
+                                <rect key="frame" x="87" y="471" width="200" height="47"/>
+                                <color key="backgroundColor" red="0.43650081630143511" green="0.76556262350735593" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="2LY-tc-GNe"/>
+                                    <constraint firstAttribute="width" constant="200" id="xa3-1O-3Zo"/>
+                                </constraints>
+                                <state key="normal" title="Tally to 50">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tallyTo50:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KVJ-iG-QdV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Imw-Ah-3Xy">
+                                <rect key="frame" x="87" y="528" width="200" height="47"/>
+                                <color key="backgroundColor" red="0.43650081629999998" green="0.76556262350000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="h8v-3z-jEG"/>
+                                    <constraint firstAttribute="width" constant="200" id="z1z-mX-dt8"/>
+                                </constraints>
+                                <state key="normal" title="Tally to 199 out of 200">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tallyTo199:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Jm8-b0-xHU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Avb-lj-oyx">
+                                <rect key="frame" x="87" y="585" width="200" height="47"/>
+                                <color key="backgroundColor" red="0.43650081629999998" green="0.76556262350000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="HEB-bi-sbg"/>
+                                    <constraint firstAttribute="height" constant="47" id="oaj-3m-StI"/>
+                                </constraints>
+                                <state key="normal" title="Tally to 1984">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tallyTo1984:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sp0-RL-Rvp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Avb-lj-oyx" secondAttribute="bottom" constant="35" id="CQg-Z7-gLb"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Imw-Ah-3Xy" secondAttribute="bottom" constant="92" id="IG7-CA-9Ji"/>
+                            <constraint firstAttribute="centerX" secondItem="Avb-lj-oyx" secondAttribute="centerX" constant="0.5" id="NlG-7h-IcX"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="bpd-oK-Vax" secondAttribute="bottom" constant="206" id="RLT-od-eH7"/>
+                            <constraint firstAttribute="centerX" secondItem="8C4-Mq-w8H" secondAttribute="centerX" constant="0.5" id="VjL-cZ-M4m"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="8C4-Mq-w8H" secondAttribute="bottom" constant="149" id="c0B-6U-kKK"/>
+                            <constraint firstAttribute="centerX" secondItem="Imw-Ah-3Xy" secondAttribute="centerX" constant="0.5" id="hKL-I1-ZOo"/>
+                            <constraint firstAttribute="centerX" secondItem="bpd-oK-Vax" secondAttribute="centerX" constant="0.5" id="ioO-JE-LLl"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="271.5" y="198.5"/>
+        </scene>
+    </scenes>
+</document>
